@@ -1,1 +1,511 @@
+/* ===================
+   VARIABLES Y FUENTES
+   =================== */
+:root {
+  --background: #ffebed;
+  --primary: #e4738f;
+  --secondary: #c4456b;
+  --accent: #b72551;
+  --light-pink: #fdd3dc;
+  --hover-pink: #f2829e;
+  --text-dark: #111;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "K2D", sans-serif;
+  background-color: var(--background);
+  color: var(--text-dark);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+/* ============ HEADER ============ */
+.header {
+  background-color: var(--primary);
+  padding: 1rem 5vw;
+  justify-content: space-around;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  height: 120px;
+  width: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.nav-links a {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.btn-login {
+  font-style: none;
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-login:hover {
+  list-style: none;
+  background-color: var(--accent);
+}
+
+/* ============ SECCION INICIO ============ */
+.section-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10vw;
+  gap: 4rem;
+}
+
+.section-inicio h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-inicio p {
+  margin-top: 1.5rem;
+  font-size: 40px;
+  max-width: 600px;
+}
+
+.section-inicio .highlight {
+  color: var(--secondary);
+}
+
+.section-inicio img {
+  width: 600px;
+  height: 400px;
+  border-radius: 12px;
+}
+
+/* ============ SECCION EXPLORA ============ */
+.section-explora {
+  padding: 5rem 10vw;
+  background-color: var(--light-pink);
+}
+
+.explora-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.explora-text {
+  flex: 1;
+  text-align: left;
+  font-size: 48px;
+}
+
+.explora-images {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.explora-images .behind {
+  height: 430px;
+  width: 300px;
+  border-radius: 10px;
+  opacity: 0.2;
+}
+
+.explora-images .front {
+  height: 430px;
+  width: 300px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.feature {
+  max-width: 220px;
+}
+
+.feature img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.feature h3 {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-size: 30px;
+}
+
+.feature p {
+  font-size: 22px;
+}
+
+/* ============ SECCION VENDE ============ */
+.section-vende {
+  padding: 5rem 10vw;
+  text-align: center;
+}
+
+.section-vende h2 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding-bottom: 25px;
+}
+.section-vende p {
+  font-size: 32px;
+}
+.section-vende .highlight {
+  color: var(--secondary);
+}
+
+.section-vende .steps {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  max-width: 240px;
+}
+
+.step img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  padding: 15px;
+}
+.section-vende a {
+  font-size: 24px;
+}
+.btn-primary:hover {
+  background-color: var(--accent);
+}
+
+/* ============ SECCION COMUNIDAD ============ */
+.section-comunidad {
+  padding: 6rem 10vw;
+  background-color: var(--light-pink);
+}
+.comunidad-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+
+  gap: 2rem;
+  align-items: start;
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* más espacio entre testimonios */
+}
+
+.testimonio {
+  background-color: #f5b9cb;
+  padding: 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%; /* Para que ocupen todo el ancho */
+}
+
+.testimonio img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.testimonio-central {
+  background-color: #f2829e;
+  padding: 2rem;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  max-width: 500px; /* limite para que no sea gigante */
+  width: 100%; /* ocupa todo el espacio disponible del grid sin excederse */
+  margin: auto; /* centra el bloque */
+}
+
+.testimonio-central img {
+  height: 200px;
+  width: 200px;
+}
+
+/* ============ SECCION NOSOTROS ============ */
+.section-nosotros {
+  padding: 6rem 10vw;
+}
+.section-nosotros h3 {
+  font-size: 40px;
+}
+.nosotros-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9rem;
+}
+
+.fondo-logo {
+  background-color: var(--primary);
+  padding: 3rem;
+  border-radius: 40px;
+  position: relative;
+}
+
+.fondo-logo img {
+  height: 500px;
+  width: 500px;
+}
+
+.nosotros-texto {
+  font-size: 35px;
+  max-width: 600px;
+  text-align: right;
+}
+
+.nosotros-texto .highlight {
+  color: var(--accent);
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.9rem;
+}
+
+footer .social {
+  margin-top: 0.5rem;
+}
+
+footer .social img {
+  height: 24px;
+  margin: 0 0.3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer .social img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+.menu-toggle {
+  display: none;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+/* ============ RESPONSIVE ============ */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-links {
+    transition: all 0.3s ease;
+  }
+  .btn-login {
+    margin-top: 1rem;
+  }
+  /* INICIO */
+  .section-inicio {
+    flex-direction: column-reverse;
+    align-items: center; /* <-- CENTRAR ambos bloques */
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .section-inicio .text {
+    width: 90%; /* <-- Controla el ancho del texto en móviles */
+    max-width: 500px;
+  }
+
+  .section-inicio img {
+    width: 90%; /* <-- No 100% */
+    max-width: 500px; /* <-- Limita el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* EXPLORA */
+  .explora-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .explora-text {
+    font-size: 32px;
+    text-align: center;
+  }
+  .explora-images .front {
+    position: static; /* <-- Ya no es absolute en móvil */
+    z-index: auto;
+  }
+  .explora-images {
+    flex-direction: column;
+    position: static;
+  }
+  .explora-images .behind {
+    flex-direction: column;
+    position: static;
+    display: none;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* VENDE */
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  /* COMUNIDAD */
+  .comunidad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .testimonios {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .testimonio {
+    width: 90%;
+  }
+
+  .testimonio-central {
+    max-width: 90%;
+  }
+
+  /* NOSOTROS */
+  .nosotros-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .nosotros-texto {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .nosotros-texto h3 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .fondo-logo img {
+    height: 250px;
+    width: 250px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 0.8rem;
+  }
+}
 
