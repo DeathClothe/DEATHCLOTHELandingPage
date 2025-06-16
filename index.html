@@ -22,13 +22,19 @@
 
         <button class="menu-toggle" id="menu-toggle">☰</button>
         <ul class="nav-links" id="nav-links">
-          <li><a href="#inicio">INICIO</a></li>
-          <li><a href="#explora">EXPLORA</a></li>
-          <li><a href="#vende">VENDE</a></li>
-          <li><a href="#comunidad">COMUNIDAD</a></li>
-          <li><a href="#nosotros">NOSOTROS</a></li>
+          <li><a href="#inicio" data-i18n="inicio">INICIO</a></li>
+          <li><a href="#explora" data-i18n="explora">EXPLORA</a></li>
+          <li><a href="#vende" data-i18n="vende">VENDE</a></li>
+          <li><a href="#comunidad" data-i18n="comunidad">COMUNIDAD</a></li>
+          <li><a href="#nosotros" data-i18n="nosotros">NOSOTROS</a></li>
+          <li>
+            <div class="lang-switch">
+              <a href="#" data-lang="english" class="active">ENG</a>
+              <a href="#" data-lang="spanish">ESP</a>
+            </div>
+          </li>
         </ul>
-        <a href="https://appweb-chi.vercel.app/" class="btn-login">Iniciar sesión</a>
+        <a href="https://appweb-chi.vercel.app/" class="btn-login" data-i18n="login">Iniciar sesión</a>
       </nav>
     </header>
 
@@ -36,15 +42,12 @@
       <!-- INICIO -->
       <section id="inicio" class="section-inicio">
         <div class="text">
-          <h1>
-            LA MODA QUE FUE,<br />VUELVE SIEMPRE CON MÁS
-            <span class="highlight">ESTILO</span>
+          <h1 data-i18n="main-title">
+            LA MODA QUE FUE,<br />VUELVE SIEMPRE CON MÁS <span class="highlight" data-i18n="main-title-highlight">ESTILO</span>
           </h1>
-          <p>
-            ¿Cansado de tener un armario lleno hasta explotar? o ¿Nunca
-            encontrar algo que ponerte?<br />
-            DeathClothe te conectará a distintas personas que deseen comprarte o
-            venderte ropa con un solo click.
+          <p data-i18n="main-desc">
+            ¿Cansado de tener un armario lleno hasta explotar? o ¿Nunca encontrar algo que ponerte?<br />
+            DeathClothe te conectará a distintas personas que deseen comprarte o venderte ropa con un solo click.
           </p>
         </div>
         <img src="deathclote_assets/Modelo.png" alt="Modelo" />
@@ -54,9 +57,9 @@
       <section id="explora" class="section-explora">
         <div class="explora-container">
           <div class="explora-text">
-            <p>
-              ¿Buscas algo único? Nuestra comunidad sube prendas cada día.
-              <br />Explora ropa con historia y dale un nuevo comienzo
+            <p data-i18n="explora-desc">
+              ¿Buscas algo único? Nuestra comunidad sube prendas cada día.<br />
+              Explora ropa con historia y dale un nuevo comienzo
             </p>
           </div>
           <div class="explora-images">
@@ -68,59 +71,74 @@
         <div class="features">
           <div class="feature">
             <img src="deathclote_assets/iconofiltros.png" alt="Filtros" />
-            <h3>Usa filtros</h3>
-            <p>Por talla, color, marca y estilo</p>
+            <h3 data-i18n="feature-filtros-title">Usa filtros</h3>
+            <p data-i18n="feature-filtros-desc">Por talla, color, marca y estilo</p>
           </div>
           <div class="feature">
             <img src="deathclote_assets/iconofavoritos.png" alt="Favoritos" />
-            <h3>Guarda tus favoritos</h3>
-            <p>Crea tu clóset virtual.</p>
+            <h3 data-i18n="feature-favoritos-title">Guarda tus favoritos</h3>
+            <p data-i18n="feature-favoritos-desc">Crea tu clóset virtual.</p>
           </div>
           <div class="feature">
             <img src="deathclote_assets/iconoseguridad.png" alt="Seguridad" />
-            <h3>Compra de forma segura</h3>
-            <p>Con protección incluida.</p>
+            <h3 data-i18n="feature-seguridad-title">Compra de forma segura</h3>
+            <p data-i18n="feature-seguridad-desc">Con protección incluida.</p>
           </div>
           <div class="feature">
             <img
               src="deathclote_assets/iconosugerencias.png"
               alt="Sugerencias"
             />
-            <h3>Recibe sugerencias</h3>
-            <p>Según tu estilo personal</p>
+            <h3 data-i18n="feature-sugerencias-title">Recibe sugerencias</h3>
+            <p data-i18n="feature-sugerencias-desc">Según tu estilo personal</p>
           </div>
         </div>
       </section>
 
       <!-- VENDE -->
       <section id="vende" class="section-vende">
-        <h2>
-          TERMINA LOS DOS PASOS,<br /><span class="highlight"
-            >¡ENVÍA Y LISTO!</span
-          >
+        <h2 data-i18n="vende-title">
+          TERMINA LOS DOS PASOS,<br /><span class="highlight">¡ENVÍA Y LISTO!</span>
         </h2>
         <div class="steps">
           <div class="step">
             <img src="deathclote_assets/tomarfotos.png" alt="Paso 1" />
-            <p>Toma fotos desde tu móvil e intenta conseguir el mejor ángulo</p>
+            <p data-i18n="vende-step1">Toma fotos desde tu móvil e intenta conseguir el mejor ángulo</p>
           </div>
           <div class="step">
             <img src="deathclote_assets/tallas.png" alt="Paso 2" />
-            <p>
-              Describe la prenda (talla, estado, estilo), para que los 
-               compradores puedan encontrarla más fácil
+            <p data-i18n="vende-step2">
+              Describe la prenda (talla, estado, estilo), para que los
+              compradores puedan encontrarla más fácil
             </p>
           </div>
           <div class="step">
             <img src="deathclote_assets/precios.png" alt="Paso 3" />
-            <p>
-              Ponle un precio, envía y listo, ya estará disponible para la
-              compra
+            <p data-i18n="vende-step3">
+              Ponle un precio, envía y listo,
+              ya estará disponible para la compra
             </p>
           </div>
         </div>
-        <a href="#" class="btn-primary">VENDE YA</a>
+        <a href="https://appweb-chi.vercel.app/" class="btn-primary" data-i18n="vende-btn">VENDE YA</a>
       </section>
+
+      <!-- ABOUT THE PRODUCT -->
+      <section class="section-about-product">
+        <div class="about-product-container">
+          <div class="about-product-texto">
+            <h2 data-i18n="about-product-title">¡Descubre todas las funciones de DeathClothe!</h2>
+            <p data-i18n="about-product-desc">
+              Mira el siguiente video y aprende a comprar, vender y conectar con la comunidad.<br>
+              <span class="highlight">¡Haz de la moda circular una experiencia única!</span>
+            </p>
+          </div>
+          <div class="about-product-video">
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/bf2tFixliMA" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
  <!-- COMUNIDAD -->
       <section id="comunidad" class="section-comunidad">
         <div class="comunidad-container">
@@ -128,29 +146,28 @@
             <div class="testimonio">
               <img src="deathclote_assets/carlacompradora.png" alt="" />
               <p>
-                <strong>Carla M. – Compradora</strong><br />“Me encanta saber
-                que cada prenda que compro no solo es linda...”
+                <strong data-i18n="testimonio-carla-nombre">Carla M. – Compradora</strong><br />
+                <span data-i18n="testimonio-carla-texto">“Me encanta saber que cada prenda que compro no solo es linda...”</span>
               </p>
             </div>
             <div class="testimonio">
               <img src="deathclote_assets/diegovendedor.png" alt="" />
               <p>
-                <strong>Diego F. – Vendedor</strong><br />“Tenía un montón de
-                ropa que ya no usaba...”
+                <strong data-i18n="testimonio-diego-nombre">Diego F. – Vendedor</strong><br />
+                <span data-i18n="testimonio-diego-texto">“Tenía un montón de ropa que ya no usaba...”</span>
               </p>
             </div>
             <div class="testimonio">
               <img src="deathclote_assets/luciacomprayventa.png" alt="" />
               <p>
-                <strong>Lucía G. – Compradora y Vendedora</strong><br />“Es la
-                primera app de segunda mano que realmente me hace sentir
-                segura...”
+                <strong data-i18n="testimonio-lucia-nombre">Lucía G. – Compradora y Vendedora</strong><br />
+                <span data-i18n="testimonio-lucia-texto">“Es la primera app de segunda mano que realmente me hace sentir segura...”</span>
               </p>
             </div>
           </div>
           <div class="testimonio-central">
             <img src="deathclote_assets/LOGO.png" alt="Logo Central" />
-            <p>
+            <p data-i18n="testimonio-central">
               Contamos con una comunidad activa de más de 8000 usuarios y más de
               5000 reseñas positivas. Hemos encontrado hogar a miles de prendas
               usadas, porque nuestra comunidad cree que el cambio empieza en el
@@ -165,22 +182,22 @@
             <div class="testimonio">
               <img src="deathclote_assets/rafaelvendedor.png" alt="" />
               <p>
-                <strong>Rafael T. – Vendedor</strong><br />“Nunca pensé que
-                vender ropa usada sería tan simple...”
+                <strong data-i18n="testimonio-rafael-nombre">Rafael T. – Vendedor</strong><br />
+                <span data-i18n="testimonio-rafael-texto">“Nunca pensé que vender ropa usada sería tan simple...”</span>
               </p>
             </div>
             <div class="testimonio">
               <img src="deathclote_assets/danielacompradora.png" alt="" />
               <p>
-                <strong>Daniela A. – Compradora</strong><br />“Me gusta que todo
-                sea tan transparente...”
+                <strong data-i18n="testimonio-daniela-nombre">Daniela A. – Compradora</strong><br />
+                <span data-i18n="testimonio-daniela-texto">“Me gusta que todo sea tan transparente...”</span>
               </p>
             </div>
             <div class="testimonio">
               <img src="deathclote_assets/javierusuario.png" alt="" />
               <p>
-                <strong>Javier R. – Usuario activo</strong><br />“DeathClothe no
-                es solo una app, es una comunidad...”
+                <strong data-i18n="testimonio-javier-nombre">Javier R. – Usuario activo</strong><br />
+                <span data-i18n="testimonio-javier-texto">“DeathClothe no es solo una app, es una comunidad...”</span>
               </p>
             </div>
           </div>
@@ -195,11 +212,11 @@
             <img src="deathclote_assets/LOGO.png" alt="Logo DeathClothe" />
           </div>
           <div class="nosotros-texto">
-            <h3>
-              DeathClothe nació para <span class="highlight">cambiar</span> la
-              forma en que vivimos la moda.
+            <h3 data-i18n="nosotros-titulo">
+              DeathClothe nació para <span class="highlight">cambiar</span>
+              la forma en que vivimos la moda.
             </h3>
-            <p>
+            <p data-i18n="nosotros-desc">
               Somos una plataforma creada por jóvenes que creen en la
               sostenibilidad, el estilo auténtico y el poder de dar nueva vida a
               cada prenda. Más que una tienda, somos una comunidad donde vender,
@@ -210,28 +227,27 @@
           </div>
         </div>
       </section>
+
+      <!-- ABOUT THE TEAM -->
+      <section class="section-about-team">
+        <h2 class="about-team-titulo" data-i18n="about-team-title">¿Quieres saber más sobre nuestro propósito?</h2>
+        <div class="about-team-video">
+          <iframe width="700" height="400" src="https://www.youtube.com/embed/bf2tFixliMA" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+
     </main>
 
-     
     <!-- FOOTER -->
     <footer class="footer">
-      <p>Política de privacidad</p>
+      <p data-i18n="footer-privacy">Política de privacidad</p>
       <div class="social">
-        <span>Redes Sociales:</span>
+        <span data-i18n="footer-social">Redes Sociales:</span>
         <img src="deathclote_assets/facebook.png" alt="Facebook" />
         <img src="deathclote_assets/instagram.png" alt="Instagram" />
         <img src="deathclote_assets/tiktok.png" alt="TikTok" />
       </div>
     </footer>
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      
-      const navLinks = document.getElementById("nav-links");
-
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
-
