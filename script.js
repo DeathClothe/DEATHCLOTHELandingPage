@@ -60,7 +60,7 @@ const translations = {
     "nosotros": "NOSOTROS",
     "login": "Iniciar sesión",
     "main-title": "LA MODA QUE FUE,<br />VUELVE SIEMPRE CON MÁS <span class=\"highlight\">ESTILO</span>",
-    "main-desc": "¿Cansado de tener un armario lleno hasta explotar? o ¿Nunca encontrar algo que ponerte?<br />DeathClothe te conectará a distintas personas que deseen comprarte o venderte ropa con un solo click.",
+    "main-desc": "¿Cansado de tener un armario lleno hasta explotar? O ¿Nunca encontrar algo que ponerte?<br />DeathClothe te conectará a distintas personas que deseen comprarte o venderte ropa con un solo clic.",
     "vende-title": "TERMINA LOS DOS PASOS,<br /><span class=\"highlight\">¡ENVÍA Y LISTO!</span>",
     "vende-step1": "Toma fotos desde tu móvil e intenta conseguir el mejor ángulo",
     "vende-step2": "Describe la prenda (talla, estado, estilo), para que los compradores puedan encontrarla más fácil",
@@ -118,3 +118,20 @@ langsLinks.forEach(link => {
 });
 
 setLanguage('english');
+
+// DARK MODE
+
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+function setDarkMode(enabled) {
+  document.body.classList.toggle('dark-mode', enabled);
+  localStorage.setItem('darkMode', enabled ? '1' : '0');
+}
+
+// Estado inicial
+const darkModePref = localStorage.getItem('darkMode') === '1';
+setDarkMode(darkModePref);
+
+darkModeToggle.addEventListener('click', () => {
+  setDarkMode(!document.body.classList.contains('dark-mode'));
+});
